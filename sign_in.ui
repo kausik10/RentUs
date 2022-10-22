@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sign_in</class>
+ <widget class="QWidget" name="sign_in">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>395</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>340</y>
+     <width>228</width>
+     <height>45</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="topPanel_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>131</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#topPanel_1
+{
+border-image: url(:/image/images/logo.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="SignIn_box">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>211</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#registrationbox
+{
+border: 1.5px solid white;
+border-radius: 3px;
+
+}</string>
+   </property>
+   <property name="title">
+    <string>Sign In</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>37</y>
+      <width>201</width>
+      <height>136</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="username">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Username</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="username_label">
+         <property name="placeholderText">
+          <string>Your username</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="Password">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Password</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="mail">
+         <property name="echoMode">
+          <enum>QLineEdit::PasswordEchoOnEdit</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Your Password</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="login_bt">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#register_btn
+{
+border-radius: 2px;
+background:rgb(111, 205, 255);
+}
+#register_btn:hover
+{
+background:rgb(128, 156, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>Log In</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="header">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>211</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Meet Up For The Good</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>images/background_student.jpeg</file>
+        <file>images/bg.jpg</file>
+        <file>images/jpg.jfif</file>
+        <file>images/logo.png</file>
+        <file>images/menu.png</file>
+        <file>../../SUgat_Project/kuRent/images/dashboard.png</file>
+        <file>../../SUgat_Project/kuRent/images/home.png</file>
+        <file>../../SUgat_Project/kuRent/images/report.png</file>
+        <file>images/dashboard.png</file>
+        <file>images/email.png</file>
+        <file>images/group.png</file>
+        <file>images/home.png</file>
+        <file>images/user.png</file>
+        <file>images/report.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
