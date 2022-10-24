@@ -351,38 +351,6 @@ color: black;
 #pushButton_5::menu-indicator{ image: none; }</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>80</y>
-     <width>81</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">#pushButton_5
-{
-	color: black;
-	background: rgb(255,255,255);
-	border: 0px;
-	border-radius: 0px;
-	pading: 2px;
-}
-#pushButton_5:hover
-{
-	background: rgb(20,20,20);
-	color: white;
-}
-#pushButton_5::menu-indicator{ image: none; }</string>
-   </property>
-  </widget>
   <zorder>plainTextEdit</zorder>
   <zorder>pushButton</zorder>
   <zorder>pushButton_2</zorder>
@@ -393,7 +361,6 @@ color: black;
   <zorder>pushButton_3</zorder>
   <zorder>pushButton_4</zorder>
   <zorder>pushButton_5</zorder>
-  <zorder>pushButton_6</zorder>
  </widget>
  <resources/>
  <connections/>

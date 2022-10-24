@@ -5,15 +5,15 @@
         <file>images/jpg.jfif</file>
         <file>images/logo.png</file>
         <file>images/menu.png</file>
-        <file>../../SUgat_Project/kuRent/images/dashboard.png</file>
-        <file>../../SUgat_Project/kuRent/images/home.png</file>
-        <file>../../SUgat_Project/kuRent/images/report.png</file>
         <file>images/dashboard.png</file>
         <file>images/email.png</file>
         <file>images/group.png</file>
         <file>images/home.png</file>
         <file>images/user.png</file>
         <file>images/report.png</file>
+        <file>images/findhome.jpg</file>
+        <file>images/hhome.png</file>
+        <file>images/feedback.jpg</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

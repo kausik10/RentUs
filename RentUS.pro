@@ -9,23 +9,32 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    aboutme.cpp \
+    addproperty.cpp \
+    dashboard.cpp \
     homepage.cpp \
     main.cpp \
+    mycontributions.cpp \
     regsitration.cpp \
-    sign_in.cpp \
-    userpage.cpp
+    sign_in.cpp
 
 HEADERS += \
+    aboutme.h \
+    addproperty.h \
+    dashboard.h \
     homepage.h \
+    mycontributions.h \
     regsitration.h \
-    sign_in.h \
-    userpage.h
+    sign_in.h
 
 FORMS += \
+    aboutme.ui \
+    addproperty.ui \
+    dashboard.ui \
     homepage.ui \
+    mycontributions.ui \
     regsitration.ui \
-    sign_in.ui \
-    userpage.ui
+    sign_in.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
