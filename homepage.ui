@@ -44,9 +44,9 @@ QTextEdit, QPlainTextEdit
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>950</x>
+     <x>960</x>
      <y>12</y>
-     <width>111</width>
+     <width>101</width>
      <height>31</height>
     </rect>
    </property>
@@ -76,9 +76,9 @@ QTextEdit, QPlainTextEdit
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>1060</x>
+     <x>1068</x>
      <y>12</y>
-     <width>111</width>
+     <width>101</width>
      <height>31</height>
     </rect>
    </property>
@@ -103,25 +103,6 @@ QTextEdit, QPlainTextEdit
    </property>
    <property name="text">
     <string>Sign Up</string>
-   </property>
-  </widget>
-  <widget class="QCommandLinkButton" name="commandLinkButton">
-   <property name="geometry">
-    <rect>
-     <x>1170</x>
-     <y>7</y>
-     <width>141</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe UI</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Add a Property</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="textEdit">
@@ -351,17 +332,55 @@ color: black;
 #pushButton_5::menu-indicator{ image: none; }</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>14</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_7
+{
+	color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton_7:hover
+{
+	background: rgb(220,220,200);
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Property</string>
+   </property>
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/images/hhome.png</normaloff>:/image/images/hhome.png</iconset>
+   </property>
+  </widget>
   <zorder>plainTextEdit</zorder>
   <zorder>pushButton</zorder>
   <zorder>pushButton_2</zorder>
-  <zorder>commandLinkButton</zorder>
   <zorder>textEdit</zorder>
   <zorder>textEdit_2</zorder>
   <zorder>textEdit_3</zorder>
   <zorder>pushButton_3</zorder>
   <zorder>pushButton_4</zorder>
   <zorder>pushButton_5</zorder>
+  <zorder>pushButton_7</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -1,7 +1,8 @@
-#include "regsitration.h"
+#include "registration.h"
 #include "homepage.h"
 #include "ui_mainwindow.h"
 //#include "ui_homepage.h"
+#include "sign_in.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -17,8 +18,10 @@ MainWindow::~MainWindow()
 }
 void MainWindow::on_signin_2_btn_clicked()
 {
-    Homepage h;
-    h.show();
+
+    Homepage *h;
+    h = new Homepage(this);
+    h->show();
 }
 
 void MainWindow::on_register_btn_clicked()
@@ -64,5 +67,13 @@ void MainWindow::on_register_btn_clicked()
         }
 }
 
+}
+
+void MainWindow::on_signin_btn_clicked()
+{
+    sign_in *s;
+    s = new sign_in(this);
+
+    s->show();
 }
 

@@ -2,6 +2,8 @@
 #include "ui_mycontributions.h"
 #include<QMenu>
 #include<QMenuBar>
+
+#include "homepage.h"
 mycontributions::mycontributions(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::mycontributions)
@@ -41,4 +43,12 @@ void mycontributions::on_pushButton_15_clicked()
     emit DashBoardClicked();
 }
 
+
+
+void mycontributions::on_pushButton_10_clicked()
+{
+    Homepage *home;
+    home = new Homepage(this);
+    home->show();
+}
 

@@ -2,6 +2,7 @@
 #include "ui_addproperty.h"
 #include <QMenu>
 #include<QMenuBar>
+#include "homepage.h"
 
 addproperty::addproperty(QWidget *parent) :
     QWidget(parent),
@@ -43,4 +44,12 @@ void addproperty::on_pushButton_30_clicked()
 }
 
 
+
+
+void addproperty::on_pushButton_26_clicked()
+{
+    Homepage *home;
+    home = new Homepage(this);
+    home->show();
+}
 

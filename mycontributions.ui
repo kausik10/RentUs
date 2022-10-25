@@ -51,7 +51,7 @@ QPushButton
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1312</width>
+     <width>1301</width>
      <height>661</height>
     </rect>
    </property>
@@ -194,14 +194,14 @@ hr { height: 1px; border-width: 0; }
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">#pushButton_3
+      <string notr="true">#pushButton_10
 {
 	color: black;
 	background: rgb(255,255,255);
 	border: 2px solid white;
 	border-radius: 2px;
 }
-#pushButton_3:hover
+#pushButton_10:hover
 {
 	background: rgb(220,220,200);
 }</string>

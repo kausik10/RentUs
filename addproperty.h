@@ -27,6 +27,7 @@ private slots:
     void on_pushButton_30_clicked();
 
 
+    void on_pushButton_26_clicked();
 };
 
 #endif // ADDPROPERTY_H

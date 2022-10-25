@@ -2,6 +2,7 @@
 #include "ui_aboutme.h"
 #include<QMenu>
 #include<QMenuBar>
+#include "homepage.h"
 aboutme::aboutme(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::aboutme)
@@ -35,5 +36,14 @@ aboutme::~aboutme()
 void aboutme::on_pushButton_23_clicked()
 {
     emit DashBoardClicked();
+}
+
+
+void aboutme::on_pushButton_19_clicked()
+{
+
+    Homepage *home;
+    home = new Homepage(this);
+    home->show();
 }
 

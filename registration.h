@@ -1,5 +1,5 @@
-#ifndef REGSITRATION_H
-#define REGSITRATION_H
+#ifndef REGISTRATION_H
+#define REGISTRATION_H
 
 #include<QtSql/QtSql>
 #include<QtSql/QSqlDatabase>
@@ -7,6 +7,7 @@
 #include <QMainWindow>
 #include<QDebug>
 #include<QMessageBox>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,10 +23,11 @@ public:
 
 private slots:
     void on_register_btn_clicked();
+    void on_signin_btn_clicked();
     void on_signin_2_btn_clicked();
 private:
     Ui::MainWindow *ui;
 
     QSqlDatabase database;
 };
-#endif // REGSITRATION_H
+#endif // REGISTRATION_H

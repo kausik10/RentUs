@@ -2,9 +2,10 @@
 #include "ui_homepage.h"
 #include <QMenu>
 #include<QMenuBar>
+#include <QDialog>
 
 Homepage::Homepage(QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::Homepage)
 {
     ui->setupUi(this);
@@ -30,30 +31,48 @@ Homepage::Homepage(QWidget *parent) :
     ui->pushButton_5->setMenu(menu);
   //  ui->pushButton_5->setStyleSheet("::menu-indicator{ image: none; }");
    // QApplication::instance()->setAttribute(Qt::AA_DontShowIconsInMenus, true);
+
+   // QObject::connect( ui->pushButton,SIGNAL(on_pushButton_2_clicked()) , this, SLOT(Homepage::close()));
+
+  //  QObject::connect(ui->pushButton_2, SIGNAL(click()), this, SLOT(openRegistration()));
    }
 
 Homepage::~Homepage()
 {
     delete ui;
 
+
 }
 
 void Homepage::on_pushButton_clicked()
 {
-    //Homepage::hide();
-    signin = new sign_in(this);
+    auto signin = new sign_in();
+    signin->setAttribute(Qt::WA_DeleteOnClose);
     signin->show();
-
 }
 
 
 void Homepage::on_pushButton_2_clicked()
 {
-    Homepage::close();
-    registration = new MainWindow(this);
-    registration->show();
+//    registration_ R;
+    auto reg = new registration_();
+       reg->setAttribute(Qt::WA_DeleteOnClose);
+       reg->show();
+
 }
+//void Homepage::openRegistration(){
+//    registration = new registration_();
+//    registration->show();
+//}
 
 
 
+
+void Homepage::on_pushButton_7_clicked()
+{
+    auto reg = new registration_();
+       reg->setAttribute(Qt::WA_DeleteOnClose);
+       reg->show();
+
+}
 

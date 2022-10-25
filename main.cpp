@@ -1,6 +1,7 @@
-//#include "regsitration.h"
-//#include "homepage.h"
-#include "dashboard.h"
+//#include "registration_.h"
+#include "homepage.h"
+//#include "dashboard.h"
+//#include "sign_in.h"
 #include <QApplication>
 #include<QtSql/QtSql>
 #include<QtSql/QSqlDatabase>
@@ -8,9 +9,10 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-//    MainWindow w;
-    userpage w;
-   // Homepage w;
+//  registration_ w;
+//    userpage w;
+//    sign_in w;
+    Homepage w;
     w.show();
 
 //    w.setGeometry(0,0,1307,619);

@@ -15,6 +15,13 @@ public:
     explicit sign_in(QWidget *parent = nullptr);
     ~sign_in();
 
+private slots:
+    void on_login_bt_clicked();
+
+    void on_signin_btn_3_clicked();
+
+//    void HomeClosed();
+
 private:
     Ui::sign_in *ui;
 

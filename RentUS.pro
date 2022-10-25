@@ -15,7 +15,7 @@ SOURCES += \
     homepage.cpp \
     main.cpp \
     mycontributions.cpp \
-    regsitration.cpp \
+    registration_.cpp \
     sign_in.cpp
 
 HEADERS += \
@@ -24,7 +24,7 @@ HEADERS += \
     dashboard.h \
     homepage.h \
     mycontributions.h \
-    regsitration.h \
+    registration_.h \
     sign_in.h
 
 FORMS += \
@@ -33,7 +33,7 @@ FORMS += \
     dashboard.ui \
     homepage.ui \
     mycontributions.ui \
-    regsitration.ui \
+    registration_.ui \
     sign_in.ui
 
 # Default rules for deployment.

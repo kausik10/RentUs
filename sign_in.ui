@@ -11,7 +11,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src.qrc">
+    <normaloff>:/image/images/logo.png</normaloff>:/image/images/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -44,7 +51,7 @@ border-image: url(:/image/images/logo.png);
     <rect>
      <x>50</x>
      <y>110</y>
-     <width>211</width>
+     <width>231</width>
      <height>181</height>
     </rect>
    </property>
@@ -70,7 +77,7 @@ border-radius: 3px;
      <rect>
       <x>11</x>
       <y>37</y>
-      <width>201</width>
+      <width>211</width>
       <height>136</height>
      </rect>
     </property>
@@ -173,7 +180,69 @@ background:rgb(128, 156, 255)
     <string>Meet Up For The Good</string>
    </property>
   </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>298</y>
+     <width>231</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_7">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#label_3
+{
+text-align: center;
+}</string>
+      </property>
+      <property name="text">
+       <string>           Don't have an account ?</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="signin_btn_3">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#signin
+{
+border:  solid white;
+border-width: 0px;
+border-radius: 3px;
+background: rgb(20, 173, 255);
+color: white
+}
+#signin:hover
+{
+
+background: rgb(33, 151, 255)
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Sign Up</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -28,6 +28,7 @@ private slots:
 
 
 
+        void on_pushButton_10_clicked();
 };
 
 #endif // MYCONTRIBUTIONS_H

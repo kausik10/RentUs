@@ -24,6 +24,7 @@ signals:
     void AddPropertyClicked();
 private slots:
     void on_pushButton_23_clicked();
+    void on_pushButton_19_clicked();
 };
 
 #endif // ABOUTME_H

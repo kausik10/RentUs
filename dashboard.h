@@ -27,6 +27,8 @@ private slots:
     void Dashboard();
   //  void on_pushButton_34_clicked();
 
+    void on_pushButton_3_clicked();
+
 private:
     Ui::userpage *ui;
     mycontributions contributions;

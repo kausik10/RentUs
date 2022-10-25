@@ -2,7 +2,7 @@
 #include "ui_dashboard.h"
 #include<QMenuBar>
 #include<QMenu>
-
+#include "homepage.h"
 userpage::userpage(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::userpage)
@@ -77,4 +77,12 @@ void userpage::Dashboard()
 }
 
 
+
+
+void userpage::on_pushButton_3_clicked()
+{
+    Homepage *home;
+    home = new Homepage(this);
+    home->show();
+}
 
