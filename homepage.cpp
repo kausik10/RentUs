@@ -2,7 +2,8 @@
 #include "ui_homepage.h"
 #include <QMenu>
 #include<QMenuBar>
-#include <QDialog>
+
+
 
 Homepage::Homepage(QWidget *parent) :
     QMainWindow(parent),
@@ -35,6 +36,11 @@ Homepage::Homepage(QWidget *parent) :
    // QObject::connect( ui->pushButton,SIGNAL(on_pushButton_2_clicked()) , this, SLOT(Homepage::close()));
 
   //  QObject::connect(ui->pushButton_2, SIGNAL(click()), this, SLOT(openRegistration()));
+
+
+
+
+
    }
 
 Homepage::~Homepage()

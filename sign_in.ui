@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>368</width>
-    <height>395</height>
+    <width>380</width>
+    <height>422</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -122,7 +122,7 @@ border-radius: 3px;
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="mail">
+        <widget class="QLineEdit" name="password">
          <property name="echoMode">
           <enum>QLineEdit::PasswordEchoOnEdit</enum>
          </property>

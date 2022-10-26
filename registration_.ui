@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>411</width>
-    <height>437</height>
+    <width>405</width>
+    <height>504</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Registration</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src.qrc">
+    <normaloff>:/image/images/logo.png</normaloff>:/image/images/logo.png</iconset>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -34,230 +38,6 @@ border-image: url(:/images/jpg.jfif);
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>464</x>
-     <y>713</y>
-     <width>163</width>
-     <height>88</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_6">
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Already have an account ?</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="signin_btn">
-      <property name="font">
-       <font>
-        <pointsize>11</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#signin
-{
-border:  solid white;
-border-width: 0px;
-border-radius: 3px;
-background: rgb(20, 173, 255);
-color: white
-}
-#signin:hover
-{
-
-background: rgb(33, 151, 255)
-
-}</string>
-      </property>
-      <property name="text">
-       <string>Sign In</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="signin_btn_2">
-      <property name="font">
-       <font>
-        <pointsize>11</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#signin
-{
-border:  solid white;
-border-width: 0px;
-border-radius: 3px;
-background: rgb(20, 173, 255);
-color: white
-}
-#signin:hover
-{
-
-background: rgb(33, 151, 255)
-
-}</string>
-      </property>
-      <property name="text">
-       <string>Back to Home</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="widget_1" native="true">
-   <property name="geometry">
-    <rect>
-     <x>513</x>
-     <y>432</y>
-     <width>228</width>
-     <height>45</height>
-    </rect>
-   </property>
-   <widget class="QLabel" name="header">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>210</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Meet Up For The Good</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="registrationbox">
-   <property name="geometry">
-    <rect>
-     <x>463</x>
-     <y>522</y>
-     <width>161</width>
-     <height>181</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">#registrationbox
-{
-border: 1.5px solid white;
-border-radius: 3px;
-
-}</string>
-   </property>
-   <property name="title">
-    <string>Registration</string>
-   </property>
-   <widget class="QWidget" name="layoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>11</x>
-      <y>37</y>
-      <width>137</width>
-      <height>136</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_5">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="username">
-         <property name="placeholderText">
-          <string>Your username</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Email</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="email">
-         <property name="placeholderText">
-          <string>Your Email</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="QPushButton" name="register_btn">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">#register_btn
-{
-border-radius: 2px;
-background: rgb(235, 252, 255);
-}
-#register_btn:hover
-{
-background:rgb(233, 236, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>Register</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
   </widget>
   <widget class="QFrame" name="frame_2">
    <property name="geometry">
@@ -284,9 +64,9 @@ border-image: url(:/images/jpg.jfif);
   <widget class="QWidget" name="layoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>93</x>
-     <y>302</y>
-     <width>163</width>
+     <x>96</x>
+     <y>370</y>
+     <width>221</width>
      <height>104</height>
     </rect>
    </property>
@@ -397,10 +177,10 @@ background: rgb(33, 151, 255)
   <widget class="QGroupBox" name="registrationbox_2">
    <property name="geometry">
     <rect>
-     <x>92</x>
+     <x>95</x>
      <y>111</y>
-     <width>161</width>
-     <height>181</height>
+     <width>221</width>
+     <height>241</height>
     </rect>
    </property>
    <property name="font">
@@ -425,8 +205,8 @@ border-radius: 3px;
      <rect>
       <x>11</x>
       <y>37</y>
-      <width>137</width>
-      <height>136</height>
+      <width>201</width>
+      <height>188</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -479,6 +259,26 @@ border-radius: 3px;
       </layout>
      </item>
      <item>
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="password_">
+       <property name="placeholderText">
+        <string>Your Password</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="register_btn_2">
        <property name="font">
         <font>
@@ -522,6 +322,8 @@ border-image: url(:/image/images/logo.png);
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
  <connections/>
 </ui>
