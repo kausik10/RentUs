@@ -9,6 +9,8 @@ userpage::userpage(QWidget *parent) :
 {
    // ui->stackedWidget->setCurrentIndex(0);
     ui->setupUi(this);
+      this->setFixedSize(this->geometry().width(),this->geometry().height());
+
     ui->menu_btn->setText("Menu");
     ui->menu_btn->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/menu.png"));
     QAction *a1 = new QAction;
@@ -31,7 +33,6 @@ userpage::userpage(QWidget *parent) :
     ui->menu_btn->setMenu(menu);
 
 
-    ui->pushButton_3->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/dashboard.png"));
     ui->pushButton_2->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/report.png"));
     ui->pushButton_6->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/home.png"));
     ui->pushButton_7->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/user.png"));
@@ -85,4 +86,6 @@ void userpage::on_pushButton_3_clicked()
     home = new Homepage(this);
     home->show();
 }
+
+
 

@@ -9,6 +9,7 @@ addproperty::addproperty(QWidget *parent) :
     ui(new Ui::addproperty)
 {
     ui->setupUi(this);
+      this->setFixedSize(this->geometry().width(),this->geometry().height());
     ui->menubtn->setText("Menu");
     ui->menubtn->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/menu.png"));
     QAction *a1 = new QAction;

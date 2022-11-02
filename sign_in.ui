@@ -124,7 +124,7 @@ border-radius: 3px;
        <item>
         <widget class="QLineEdit" name="password">
          <property name="echoMode">
-          <enum>QLineEdit::PasswordEchoOnEdit</enum>
+          <enum>QLineEdit::Normal</enum>
          </property>
          <property name="placeholderText">
           <string>Your Password</string>
@@ -154,6 +154,9 @@ background:rgb(128, 156, 255)
        </property>
        <property name="text">
         <string>Log In</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
        </property>
       </widget>
      </item>

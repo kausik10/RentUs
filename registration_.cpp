@@ -48,7 +48,7 @@ void registration_::on_register_btn_2_clicked()
 //    database.setHostName("127.0.0.1");
 //    database.setUserName("root");
 //    database.setPassword("");
-    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/mydb.sqlite");
+    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
 
     //database.setDatabaseName("qt_test_register");
     if(database.open())
@@ -58,19 +58,30 @@ void registration_::on_register_btn_2_clicked()
         QString username = ui->username_2->text();
         QString email = ui->email_2->text();
         QString password = ui->password_->text();
+        QString age = ui->age->text();
+        QString contact = ui->contact->text();
+        QString gender = ui->comboBox->currentText();
+        QString address  = ui->address->text();
 
 //        //Run Our Insert Query
 
           QSqlQuery qry;
 
-          qry.prepare("INSERT INTO rent_us(username, email, password)VALUES ('"+username+"', '"+email+"','"+password+"')");
+          qry.prepare("INSERT INTO user_detailss(username, email, password, age, contact, gender, address)"
+                      "VALUES "
+                      "('"+username+"', '"+email+"','"+password+"', '"+age+"', '"+contact+"', '"+gender+"', '"+address+"')");
 
         qry.bindValue(":username", username);
         qry.bindValue(":email", email);
         qry.bindValue(":password", password);
+        qry.bindValue(":age", age);
+        qry.bindValue(":contact", contact);
+        qry.bindValue(":gender", gender);
+        qry.bindValue(":address",address);
 
         if(qry.exec())
         {
+            this->close();
             QMessageBox::information(this, "Inserted", "Succesfully Registered. Proceed to Login");
 
        } else

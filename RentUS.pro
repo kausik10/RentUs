@@ -11,30 +11,39 @@ CONFIG += c++17
 SOURCES += \
     aboutme.cpp \
     addproperty.cpp \
+    admin_dashboard.cpp \
     dashboard.cpp \
     homepage.cpp \
     main.cpp \
     mycontributions.cpp \
+    properrty_details.cpp \
     registration_.cpp \
-    sign_in.cpp
+    sign_in.cpp \
+    user_details.cpp
 
 HEADERS += \
     aboutme.h \
     addproperty.h \
+    admin_dashboard.h \
     dashboard.h \
     homepage.h \
     mycontributions.h \
+    properrty_details.h \
     registration_.h \
-    sign_in.h
+    sign_in.h \
+    user_details.h
 
 FORMS += \
     aboutme.ui \
     addproperty.ui \
+    admin_dashboard.ui \
     dashboard.ui \
     homepage.ui \
     mycontributions.ui \
+    properrty_details.ui \
     registration_.ui \
-    sign_in.ui
+    sign_in.ui \
+    user_details.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

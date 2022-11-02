@@ -6,6 +6,12 @@
 #include<QtSql/QtSql>
 #include<QtSql/QSqlDatabase>
 #include<QtSql/QSqlQuery>
+
+
+
+
+//#include "user_details.h"
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -13,6 +19,9 @@ int main(int argc, char *argv[])
 //    userpage w;
 //    sign_in w;
     Homepage w;
+
+//    User_details w;
+
     w.show();
 
 //    w.setGeometry(0,0,1307,619);

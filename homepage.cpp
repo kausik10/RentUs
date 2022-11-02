@@ -2,7 +2,7 @@
 #include "ui_homepage.h"
 #include <QMenu>
 #include<QMenuBar>
-
+#include<QDesktopServices>
 
 
 Homepage::Homepage(QWidget *parent) :
@@ -80,5 +80,31 @@ void Homepage::on_pushButton_7_clicked()
        reg->setAttribute(Qt::WA_DeleteOnClose);
        reg->show();
 
+}
+
+
+void Homepage::on_pushButton_6_clicked()
+{
+    auto reg = new registration_();
+       reg->setAttribute(Qt::WA_DeleteOnClose);
+       reg->show();
+}
+
+
+void Homepage::on_pushButton_9_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://www.facebook.com/profile.php?id=100087397332307"));
+}
+
+
+void Homepage::on_pushButton_12_clicked()
+{
+    QDesktopServices::openUrl(QUrl("mailto:Rent@rent.us1001@gmail.com"));
+}
+
+
+void Homepage::on_pushButton_11_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://twitter.com/RentUs44528430"));
 }
 

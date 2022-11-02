@@ -2,6 +2,11 @@
 #define ABOUTME_H
 
 #include <QWidget>
+#include<QtSql/QtSql>
+#include<QtSql/QSqlDatabase>
+#include<QtSql/QSqlQuery>
+#include<QMessageBox>
+#include<QDebug>
 
 namespace Ui {
 class aboutme;

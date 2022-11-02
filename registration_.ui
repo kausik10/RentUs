@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>405</width>
-    <height>504</height>
+    <width>516</width>
+    <height>660</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,6 +16,14 @@
   <property name="windowIcon">
    <iconset resource="src.qrc">
     <normaloff>:/image/images/logo.png</normaloff>:/image/images/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QComboBox
+{
+border-radius: 2px;
+border: 1px solid white
+}
+</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -64,10 +72,10 @@ border-image: url(:/images/jpg.jfif);
   <widget class="QWidget" name="layoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>96</x>
-     <y>370</y>
-     <width>221</width>
-     <height>104</height>
+     <x>80</x>
+     <y>547</y>
+     <width>391</width>
+     <height>101</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -80,7 +88,7 @@ border-image: url(:/images/jpg.jfif);
        </font>
       </property>
       <property name="text">
-       <string>Already have an account ?</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;      Already have an account ?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>
@@ -177,10 +185,10 @@ background: rgb(33, 151, 255)
   <widget class="QGroupBox" name="registrationbox_2">
    <property name="geometry">
     <rect>
-     <x>95</x>
-     <y>111</y>
-     <width>221</width>
-     <height>241</height>
+     <x>80</x>
+     <y>90</y>
+     <width>391</width>
+     <height>441</height>
     </rect>
    </property>
    <property name="font">
@@ -205,8 +213,8 @@ border-radius: 3px;
      <rect>
       <x>11</x>
       <y>37</y>
-      <width>201</width>
-      <height>188</height>
+      <width>371</width>
+      <height>394</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -273,8 +281,107 @@ border-radius: 3px;
      </item>
      <item>
       <widget class="QLineEdit" name="password_">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
        <property name="placeholderText">
         <string>Your Password</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Age</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="age">
+       <property name="placeholderText">
+        <string>Your Age</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Contact</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="contact">
+       <property name="placeholderText">
+        <string>Your Contact Number</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="styleSheet">
+        <string notr="true">background: rgb(255,255,255);
+border-color: rgb(255,255,255);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Male</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Female</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Prefer Not to say</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="address">
+       <property name="placeholderText">
+        <string>Your Address</string>
        </property>
       </widget>
      </item>

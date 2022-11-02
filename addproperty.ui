@@ -27,6 +27,7 @@ QTextEdit, QPlainTextEdit
 }
 QPushButton
 {
+	padding: 2px;
 	color: black;
 	background: rgb(255,255,255);
 	border: 2px solid white;
@@ -59,8 +60,8 @@ QPushButton
     <widget class="QTextEdit" name="textEdit_13">
      <property name="geometry">
       <rect>
-       <x>650</x>
-       <y>21</y>
+       <x>659</x>
+       <y>17</y>
        <width>171</width>
        <height>41</height>
       </rect>
@@ -103,8 +104,8 @@ hr { height: 1px; border-width: 0; }
     <widget class="QTextEdit" name="textEdit_14">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>1</y>
+       <x>579</x>
+       <y>-3</y>
        <width>81</width>
        <height>61</height>
       </rect>
@@ -142,8 +143,8 @@ hr { height: 1px; border-width: 0; }
     <widget class="QPushButton" name="pushButton_26">
      <property name="geometry">
       <rect>
-       <x>92</x>
-       <y>17</y>
+       <x>101</x>
+       <y>12</y>
        <width>81</width>
        <height>31</height>
       </rect>
@@ -170,12 +171,16 @@ hr { height: 1px; border-width: 0; }
      <property name="text">
       <string>Home</string>
      </property>
+     <property name="icon">
+      <iconset resource="src.qrc">
+       <normaloff>:/image/images/home.png</normaloff>:/image/images/home.png</iconset>
+     </property>
     </widget>
     <widget class="QTextEdit" name="textEdit_15">
      <property name="geometry">
       <rect>
-       <x>440</x>
-       <y>1</y>
+       <x>449</x>
+       <y>-3</y>
        <width>121</width>
        <height>61</height>
       </rect>
@@ -206,8 +211,8 @@ hr { height: 1px; border-width: 0; }
     <widget class="QPlainTextEdit" name="plainTextEdit_4">
      <property name="geometry">
       <rect>
-       <x>-5</x>
-       <y>2</y>
+       <x>0</x>
+       <y>-1</y>
        <width>1311</width>
        <height>61</height>
       </rect>
@@ -222,8 +227,8 @@ hr { height: 1px; border-width: 0; }
     <widget class="QPushButton" name="menubtn">
      <property name="geometry">
       <rect>
-       <x>6</x>
-       <y>-8</y>
+       <x>1</x>
+       <y>-11</y>
        <width>81</width>
        <height>71</height>
       </rect>
@@ -272,6 +277,7 @@ hr { height: 1px; border-width: 0; }
      <property name="styleSheet">
       <string notr="true">#pushButton_28
 {
+padding: 5px;
 color: black;
 	background: rgb(255,255,255);
 	border: 2px solid white;
@@ -300,8 +306,8 @@ color: black;
     <widget class="QPushButton" name="pushButton_29">
      <property name="geometry">
       <rect>
-       <x>192</x>
-       <y>17</y>
+       <x>201</x>
+       <y>12</y>
        <width>91</width>
        <height>31</height>
       </rect>

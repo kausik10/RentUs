@@ -9,6 +9,8 @@ mycontributions::mycontributions(QWidget *parent) :
     ui(new Ui::mycontributions)
 {
     ui->setupUi(this);
+
+      this->setFixedSize(this->geometry().width(),this->geometry().height());
     ui->pushButton_9->setText("Menu");
     ui->pushButton_9->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/menu.png"));
     QAction *A1 = new QAction;

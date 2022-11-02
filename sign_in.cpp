@@ -1,8 +1,10 @@
 #include "sign_in.h"
 #include "ui_sign_in.h"
-#include "homepage.h"
+//#include "homepage.h"
 #include "registration_.h"
 #include "dashboard.h"
+#include "admin_dashboard.h"
+
 #include <QMessageBox>
 sign_in::sign_in(QWidget *parent) :
     QWidget(parent),
@@ -24,25 +26,30 @@ sign_in::~sign_in()
 
 void sign_in::on_login_bt_clicked()
 {
+    QString username = ui->username_label->text();
+    QString password = ui->password->text();
 
-    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE", "mydb");
+    if((username == "admin") && (password == "password" ))
+    {
+        this->close();
+        auto admin_page = new admin_dashboard();
+        admin_page->setAttribute(Qt::WA_DeleteOnClose);
+        admin_page->show();
+    }
+    else
+    {
+
+    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
+    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
 
 
-//     database.setHostName("127.0.0.1");
-//     database.setUserName("root");
-//     database.setPassword("");
-     database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/mydb.sqlite");
-
-     QString username = ui->username_label->text();
-     QString password = ui->password->text();
-     if (database.open())
+    if (database.open())
      {
          // Creaing Queries
-       //  QMessageBox::information(this, "SUccesfully conneced", "Logged IN");
 
          QSqlQuery query(QSqlDatabase::database("mydb"));
 
-         query.prepare("SELECT * FROM rent_us WHERE username = :username AND password = :password");
+         query.prepare("SELECT * FROM user_detailss WHERE username = :username AND password = :password");
 
          query.bindValue(":username", username);
          query.bindValue(":password", password);
@@ -60,9 +67,6 @@ void sign_in::on_login_bt_clicked()
                  if(usernameFromDB == username && passwordFromDB == password)
                  {
                      this->close();
-                     auto h = new Homepage();
-                     h->setAttribute(Qt::WA_DeleteOnClose);
-                     h->close();
                      auto page = new userpage();
                      page->setAttribute(Qt::WA_DeleteOnClose);
                      page->show();
@@ -76,7 +80,7 @@ void sign_in::on_login_bt_clicked()
      }else{
          QMessageBox::information(this, "Not connected", "Retry");
      }
-
+    }
     //Homepage *h;
 
 }

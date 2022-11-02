@@ -2,7 +2,9 @@
 #define SIGN_IN_H
 
 #include <QWidget>
-
+#include<QtSql/QtSql>
+#include<QtSql/QSqlDatabase>
+#include<QtSql/QSqlQuery>
 namespace Ui {
 class sign_in;
 }
