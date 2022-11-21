@@ -26,6 +26,7 @@
         <file>images/icons8-twitter-60.png</file>
         <file>images/emaill.jpg</file>
         <file>images/rentus.png</file>
+        <file>images/logo3.png</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

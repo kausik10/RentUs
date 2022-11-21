@@ -35,10 +35,22 @@ private slots:
 
     void on_pushButton_11_clicked();
 
+    void on_pushButton_4_clicked();
+
+
+    void on_pushButton_13_clicked();
+
+    void on_pushButton_14_clicked();
+
+    void on_pushButton_16_clicked();
+
+    void on_pushButton_17_clicked();
+
 private:
     Ui::Homepage *ui;
     registration_ *registration;
     sign_in *signin;
 };
+
 
 #endif // HOMEPAGE_H

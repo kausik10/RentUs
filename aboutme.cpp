@@ -3,6 +3,10 @@
 #include<QMenu>
 #include<QMenuBar>
 #include "homepage.h"
+//#include "registration_.h"
+#include "sign_in.h"
+//#include "globals.h"
+
 aboutme::aboutme(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::aboutme)
@@ -29,62 +33,7 @@ aboutme::aboutme(QWidget *parent) :
     ui->menubtn->setMenu(menu);
 
 
-
-//    QString username = ui->username->text();
-//    QString email = ui->email->text();
-//    QString age = ui->age->text();
-//    QString contact = ui->contact->text();
-//    QString gender = ui->gender->text();
-//    QString address  = ui->address->text();
-
-    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
-
-
-     if (database.open())
-     {
-
-
-         QSqlQuery query;
-
-         query.prepare("SELECT * FROM user_detailss");
-
-         //WHERE username='"+username+"' AND age='"+age+"' AND email='"+email+"' AND contact='"+contact+"' AND address='"+address+"'
-
-//         query.bindValue(":username", username);
-//         query.bindValue(":age", age);
-//         query.bindValue(":email", email);
-//         query.bindValue(":contact", contact);
-//         query.bindValue(":gender", gender);
-//         query.bindValue(":address", address);
-
-         if (!query.exec())
-         {
-             QMessageBox::information(this, "Failed", "Data Not found");
-         }
-         else{
-             while(query.next())
-             {
-                 ui->username->setText(query.value(1).toString());
-                 ui->age->setText(query.value(4).toString());
-                 ui->email->setText(query.value(2).toString());
-                 ui->contact->setText(query.value(5).toString());
-                 ui->gender->setText(query.value(6).toString());
-                 ui->address->setText(query.value(7).toString());
-
-//                 QString usernameFromDB = query.value(1).toString();
-//                 QString ageFromDB = query.value(4).toString();
-//                 QString emailFromDB = query.value(2).toString();
-//                 QString contactFromDB = query.value(5).toString();
-//                 QString genderFromDB = query.value(6).toString();
-//                 QString addressFromDB = query.value(7).toString();
-
-             }
-         }
-     }else{
-         QMessageBox::information(this, "Not connected", "Retry");
-     }
-   }
+}
 
 
 
@@ -105,5 +54,148 @@ void aboutme::on_pushButton_19_clicked()
     Homepage *home;
     home = new Homepage(this);
     home->show();
+}
+
+
+void aboutme::on_pushButton_5_clicked()
+{
+    ui->username->setReadOnly(false);
+    ui->email->setReadOnly(false);
+    ui->age->setReadOnly(false);
+    ui->address->setReadOnly(false);
+    ui->gender->setReadOnly(false);
+    ui->age->setReadOnly(false);
+
+    QString username = ui->username->text();
+    QString email = ui->email->text();
+    QString age = ui->age->text();
+    QString contact = ui->contact->text();
+    QString gender = ui->gender->text();
+    QString address  = ui->address->text();
+
+    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
+    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
+
+     if (database.open())
+     {
+
+
+         QSqlQuery query;
+
+         query.prepare("SELECT * FROM user_detailss WHERE username='"+username+"' AND age='"+age+"' AND email='"+email+"' AND contact='"+contact+"' AND address='"+address+"'");
+
+         query.bindValue(":username", username);
+         query.bindValue(":age", age);
+         query.bindValue(":email", email);
+         query.bindValue(":contact", contact);
+         query.bindValue(":gender", gender);
+         query.bindValue(":address", address);
+
+         if (!query.exec())
+         {
+             QMessageBox::information(this, "Failed", "Data Not found");
+         }
+         else{
+             while(query.next())
+             {
+
+
+                 QString usernameFromDB = query.value(1).toString();
+                 QString ageFromDB = query.value(4).toString();
+                 QString emailFromDB = query.value(2).toString();
+                 QString contactFromDB = query.value(5).toString();
+                 QString genderFromDB = query.value(6).toString();
+                 QString addressFromDB = query.value(7).toString();
+
+                 ui->username->setText(usernameFromDB);
+                 ui->age->setText(ageFromDB);
+                 ui->email->setText(emailFromDB);
+                 ui->contact->setText(contactFromDB);
+                 ui->gender->setText(genderFromDB);
+                 ui->address->setText(addressFromDB);
+
+             }
+         }
+     }else{
+         QMessageBox::information(this, "Not connected", "Retry");
+     }
+}
+
+
+void aboutme::on_pushButton_clicked()
+{
+
+         ui->username->setReadOnly(true);
+         ui->email->setReadOnly(true);
+         ui->age->setReadOnly(true);
+         ui->address->setReadOnly(true);
+         ui->gender->setReadOnly(true);
+         ui->age->setReadOnly(true);
+}
+
+
+
+
+
+void aboutme::on_pushButton_7_clicked()
+{
+    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE", "mydb");
+    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
+    QFileInfo checkFile("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
+    QSqlQuery query(database);
+
+    if (checkFile.isFile())
+    {
+
+        if (database.open()){
+            qDebug()<<"Connected to databse";
+
+//            QString username = sign.Username();
+           // sign_in sign;// = new sign_in();
+          //  int id = sign.UserId();
+            sign_in sign_;// = new sign_in();
+
+           QString name = sign_.Username();
+
+
+
+            query.prepare("SELECT * FROM user_detailss WHERE username = :username");
+            query.bindValue(":username", name);
+
+
+                 if (!query.exec())
+                 {
+                     QMessageBox::information(this, "Failed", "Data Not found");
+                 }
+                 else{
+                     while(query.next())
+                     {
+//                         int idFromDb = query.value(0).toInt();
+
+                         QString usernameFromDB ;
+                         QString ageFromDB = query.value(4).toString();
+                         QString emailFromDB = query.value(2).toString();
+                         QString contactFromDB = query.value(5).toString();
+                         QString genderFromDB = query.value(6).toString();
+                         QString addressFromDB = query.value(7).toString();
+
+                         ui->username->setText(usernameFromDB.append(query.value(1).toString()+""));
+
+                         ui->age->setText(ageFromDB);
+                         ui->email->setText(emailFromDB);
+                         ui->contact->setText(contactFromDB);
+                         ui->gender->setText(genderFromDB);
+                         ui->address->setText(addressFromDB);
+
+                     }
+                }
+        }
+
+    }else{
+        qDebug()<<"Database Not found";
+    }
+
+     database.close();
+
 }
 

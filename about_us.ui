@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>about_us</class>
+ <widget class="QWidget" name="about_us">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1308</width>
+    <height>883</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#about_us
+{
+
+background-color: rgb(222,220,220)
+}
+
+QTextEdit, QPlainTextEdit
+{
+	border : 1px solid white;
+	border-radius: 2px;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>759</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:bold;</string>
+   </property>
+   <property name="text">
+    <string>Follow us </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>1068</x>
+     <y>11</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_2 
+{
+	color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton_2:hover
+{
+	background: rgb(220,220,200);
+}</string>
+   </property>
+   <property name="text">
+    <string>Sign Up</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>13</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleName">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleDescription">
+    <string notr="true"/>
+   </property>
+   <property name="undoRedoEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; font-style:italic;&quot;&gt;Meet up for the good&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_11">
+   <property name="geometry">
+    <rect>
+     <x>622</x>
+     <y>819</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+border-image: url(:/image/images/icons8-twitter-60.png);
+    border-radius: 4px;
+    color: #fff;}
+
+QPushButton:hover{
+ background-color: rgb(109, 109, 109);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>11</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton
+{
+	color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton:hover
+{
+	background: rgb(220,220,200);
+}</string>
+   </property>
+   <property name="text">
+    <string>Sign In</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_10">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>819</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QPushButton{   height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    
+border-image: url(:/image/images/icons8-instagram-60.png);
+    border-radius: 4px;
+    color: #fff;
+}
+QPushButton:hover{
+ background-color: rgb(109, 109, 109);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>-7</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#textEdit_2
+{
+	border-color: white;
+	bordrer: none;
+}</string>
+   </property>
+   <property name="undoRedoEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:700; font-style:italic; color:#00007f;&quot;&gt;US&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-1</y>
+     <width>1311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#plaintextEdit
+{
+	border: 2px solid brown;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>679</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))
+}
+QPushButton {
+
+     background-color: yellow; border: 1px solid black;
+border:no;
+font:25px;
+background-color: #ffcd00;
+    border-radius: 10px;
+    box-shadow: 0 2px 13px rgb(153 123 0 / 25%);
+}
+QPushButton:hover{
+
+ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(255, 210, 0, 255), stop:1 rgba(255, 220, 0 ,255));
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>RentUs</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>13</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_7
+{
+	color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton_7:hover
+{
+	background: rgb(220,220,200);
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Property</string>
+   </property>
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/images/hhome.png</normaloff>:/image/images/hhome.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>9</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_3
+{
+	color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton_3:hover
+{
+	background: rgb(220,220,200);
+}</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>-7</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="undoRedoEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:700; font-style:italic; color:#aa330b;&quot;&gt;RENT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>9</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_4
+{
+color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton_4:hover
+{
+	background: rgb(220,220,200);
+}</string>
+   </property>
+   <property name="text">
+    <string>About Us</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-11</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_5
+{
+	color: black;
+	background: rgb(255,255,255);
+	border: 0px;
+	border-radius: 0px;
+	pading: 2px;
+}
+#pushButton_5:hover
+{
+	background: rgb(20,20,20);
+	color: white;
+}
+#pushButton_5::menu-indicator{ image: none; }</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>819</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">   QPushButton{ height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    background-color: black;;
+    border-radius: 4px;
+    color: white;
+font:25px;
+font:bold;}
+QPushButton:hover{
+ background-color: rgb(109, 109, 109);
+}</string>
+   </property>
+   <property name="text">
+    <string>f</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_12">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>819</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QPushButton{   height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    
+border-image: url(:/image/images/emaill.jpg);
+    border-radius: 4px;
+    color: #fff;
+}
+QPushButton:hover{
+ background-color: rgb(109, 109, 109);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>962</x>
+     <y>80</y>
+     <width>241</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Our Vision</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>140</y>
+     <width>471</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 italic 10pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>‘Rent Us’ is a GUI based application that allows people to 
+ search for nearby houses inside a locality available for 
+renting.We have targeted this app mainly for the students 
+around Kathmandu University who are newly admitted or
+ are planning to shift to a better housing.</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>70</y>
+     <width>371</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/images/logo3.png);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>100</y>
+     <width>281</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>32</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>About Us</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>972</x>
+     <y>160</y>
+     <width>381</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 italic 10pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>This project basically aims for the students who 
+intend to stay around the university areas 
+for pursuing the education and even for the 
+university staff and local people. We aim to 
+provide ease for finding rent by knowing it 
+better from reviews of people renting 
+the place previously provided. This app 
+tends to help not only for students intending
+ to live there but also the house owne who
+ wants to rent their house. So we expect this
+ project to uplift some percent of the economy 
+of the people of that area.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_28">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>560</y>
+     <width>531</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+font:50px;
+font:bold;</string>
+   </property>
+   <property name="text">
+    <string>Find the best rooms.</string>
+   </property>
+  </widget>
+  <zorder>plainTextEdit</zorder>
+  <zorder>label_31</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>textEdit_3</zorder>
+  <zorder>pushButton_11</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_10</zorder>
+  <zorder>textEdit_2</zorder>
+  <zorder>pushButton_8</zorder>
+  <zorder>pushButton_7</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>textEdit</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>pushButton_9</zorder>
+  <zorder>pushButton_12</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_4</zorder>
+  <zorder>widget</zorder>
+  <zorder>label</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_28</zorder>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>

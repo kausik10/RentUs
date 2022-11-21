@@ -2,7 +2,13 @@
 #define PROPERRTY_DETAILS_H
 
 #include <QWidget>
-
+#include<QSqlDatabase>
+#include<QDebug>
+#include <QDialog>
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
+#include <QMessageBox>
 namespace Ui {
 class properrty_details;
 }

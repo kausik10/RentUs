@@ -41,19 +41,19 @@ void registration_::on_register_btn_2_clicked()
 {
 
     //Connecting to MySQL database
+    QSqlDatabase database=QSqlDatabase::addDatabase("QSQLITE");
+     database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
 
-   QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-
-
-//    database.setHostName("127.0.0.1");
-//    database.setUserName("root");
-//    database.setPassword("");
-    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
-
-    //database.setDatabaseName("qt_test_register");
-    if(database.open())
+    if (ui->username_2->text().isEmpty() || ui->address->text().isEmpty() || ui->password_->text().isEmpty() || ui->contact->text().isEmpty() || ui->email_2->text().isEmpty() || ui->age->text().isEmpty())
     {
-//        //Retrieve Data from Input Fields
+        QMessageBox::warning(this, "Empty", "One or more fields empty");
+
+    }
+
+    else
+    {
+        database.open();
+   //Retrieve Data from Input Fields
 
         QString username = ui->username_2->text();
         QString email = ui->email_2->text();
@@ -89,5 +89,6 @@ void registration_::on_register_btn_2_clicked()
             QMessageBox::information(this, "Not Connected", "Database is Not connected");
         }
 }
+    database.close();
 
 }

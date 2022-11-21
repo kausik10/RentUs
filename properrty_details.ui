@@ -473,6 +473,12 @@ border-radius: 12px;
 border-style: inset;
 </string>
      </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
      <attribute name="horizontalHeaderVisible">
       <bool>true</bool>
      </attribute>

@@ -9,9 +9,11 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    about_us.cpp \
     aboutme.cpp \
     addproperty.cpp \
     admin_dashboard.cpp \
+    categories.cpp \
     dashboard.cpp \
     homepage.cpp \
     main.cpp \
@@ -22,10 +24,13 @@ SOURCES += \
     user_details.cpp
 
 HEADERS += \
+    about_us.h \
     aboutme.h \
     addproperty.h \
     admin_dashboard.h \
+    categories.h \
     dashboard.h \
+    globals.h \
     homepage.h \
     mycontributions.h \
     properrty_details.h \
@@ -34,9 +39,11 @@ HEADERS += \
     user_details.h
 
 FORMS += \
+    about_us.ui \
     aboutme.ui \
     addproperty.ui \
     admin_dashboard.ui \
+    categories.ui \
     dashboard.ui \
     homepage.ui \
     mycontributions.ui \
@@ -55,7 +62,8 @@ RESOURCES += \
 
 DISTFILES += \
     images/background_student.jpeg \
-    images/bg.jpg
+    images/bg.jpg \
+    images/logo3.png
 
 win32: LIBS += -L$$PWD/lib/ -llibmysql
 

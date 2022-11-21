@@ -266,52 +266,6 @@ hr { height: 1px; border-width: 0; }
 #menubtn::menu-indicator{ image: none; }</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_21">
-     <property name="geometry">
-      <rect>
-       <x>510</x>
-       <y>100</y>
-       <width>291</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>22</pointsize>
-       <italic>false</italic>
-       <bold>true</bold>
-       <stylestrategy>PreferDefault</stylestrategy>
-       <kerning>false</kerning>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">#pushButton_21
-{
-padding: 5px;
-color: black;
-	background: rgb(255,255,255);
-	border: 2px solid white;
-	border-radius: 20px;
-}
-#pushButton_21:hover
-{
-	background: rgb(220,220,200);
-}</string>
-     </property>
-     <property name="text">
-      <string>     About Me</string>
-     </property>
-     <property name="icon">
-      <iconset resource="src.qrc">
-       <normaloff>:/image/images/user.png</normaloff>:/image/images/user.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>25</width>
-       <height>25</height>
-      </size>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButton_22">
      <property name="geometry">
       <rect>
@@ -471,9 +425,9 @@ padding-bottom:7px;</string>
      <property name="geometry">
       <rect>
        <x>310</x>
-       <y>180</y>
+       <y>90</y>
        <width>845</width>
-       <height>411</height>
+       <height>501</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -550,7 +504,7 @@ padding-bottom:7px;</string>
       <rect>
        <x>350</x>
        <y>200</y>
-       <width>361</width>
+       <width>781</width>
        <height>31</height>
       </rect>
      </property>
@@ -578,7 +532,7 @@ padding-bottom:7px;</string>
 </string>
      </property>
      <property name="text">
-      <string>Hello There!</string>
+      <string>View Details</string>
      </property>
      <property name="icon">
       <iconset theme="accessories-text-editor">
@@ -656,8 +610,8 @@ color: rgb(255,255,255);
      <property name="geometry">
       <rect>
        <x>780</x>
-       <y>210</y>
-       <width>301</width>
+       <y>257</y>
+       <width>311</width>
        <height>31</height>
       </rect>
      </property>
@@ -775,9 +729,9 @@ padding-bottom:7px;</string>
      <property name="geometry">
       <rect>
        <x>780</x>
-       <y>250</y>
+       <y>300</y>
        <width>311</width>
-       <height>191</height>
+       <height>141</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -798,31 +752,7 @@ padding-bottom:7px;
       <rect>
        <x>350</x>
        <y>200</y>
-       <width>361</width>
-       <height>331</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background: rgba(200,150,55, 60);
-	border: 0px solid white ;
-	border-radius: 15px;
-	text-align: center;
-
-</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>750</x>
-       <y>200</y>
-       <width>361</width>
+       <width>781</width>
        <height>331</height>
       </rect>
      </property>
@@ -873,16 +803,57 @@ padding-bottom:7px;
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>119</y>
+       <width>761</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+#pushButton_2
+{
+border-radius: 5px;
+border: 2px solid white;
+background-color: rgba(150, 255, 147, 45);
+text-align: center;
+
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string> About Me</string>
+     </property>
+     <property name="icon">
+      <iconset resource="src.qrc">
+       <normaloff>:/image/images/user.png</normaloff>:/image/images/user.png</iconset>
+     </property>
+    </widget>
     <zorder>label</zorder>
-    <zorder>label_2</zorder>
     <zorder>label_3</zorder>
+    <zorder>splitter</zorder>
     <zorder>plainTextEdit_3</zorder>
     <zorder>textEdit_9</zorder>
     <zorder>textEdit_10</zorder>
     <zorder>pushButton_19</zorder>
     <zorder>textEdit_11</zorder>
     <zorder>menubtn</zorder>
-    <zorder>pushButton_21</zorder>
     <zorder>pushButton_22</zorder>
     <zorder>layoutWidget_3</zorder>
     <zorder>textEdit_12</zorder>
@@ -901,6 +872,7 @@ padding-bottom:7px;
     <zorder>email</zorder>
     <zorder>address</zorder>
     <zorder>contact</zorder>
+    <zorder>pushButton_2</zorder>
    </widget>
   </widget>
  </widget>

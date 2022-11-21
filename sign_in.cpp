@@ -4,8 +4,10 @@
 #include "registration_.h"
 #include "dashboard.h"
 #include "admin_dashboard.h"
-
+#include "globals.h"
 #include <QMessageBox>
+
+
 sign_in::sign_in(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::sign_in)
@@ -22,7 +24,6 @@ sign_in::~sign_in()
 {
     delete ui;
 }
-
 
 void sign_in::on_login_bt_clicked()
 {
@@ -61,12 +62,19 @@ void sign_in::on_login_bt_clicked()
          else{
              while(query.next())
              {
+              //   int idFromDb = query.value(0).toInt();
                  QString usernameFromDB = query.value(1).toString();
                  QString passwordFromDB = query.value(3).toString();
 
                  if(usernameFromDB == username && passwordFromDB == password)
                  {
+
+                     setUsername(usernameFromDB);
+
+                     emit UsernameChanged();
+
                      this->close();
+
                      auto page = new userpage();
                      page->setAttribute(Qt::WA_DeleteOnClose);
                      page->show();
@@ -81,9 +89,34 @@ void sign_in::on_login_bt_clicked()
          QMessageBox::information(this, "Not connected", "Retry");
      }
     }
-    //Homepage *h;
-
 }
+
+//QString sign_in::validation(const QString &username, const QString &password)
+//{
+
+//    QSqlQuery query(QSqlDatabase::database("mydb"));
+//    query.prepare(QString("SELECT * FROM user_detailss"));
+//    if(!query.exec()) {
+//        qDebug() << "failed to execute";
+//    } else {
+//        while (query.next()) {
+//           // int idFromDb = query.value(0).toInt();
+
+//            QString passwordFromDb = query.value(3).toString();
+//            QString usernameFromDb = query.value(1).toString();
+
+
+//            if ((username == usernameFromDb ) && (password == passwordFromDb)) { setUsername(usernameFromDb);}
+
+//        }
+//        return "fail";
+//    }
+//    return "fail";
+//}
+
+
+
+// Prompt to registration
 
 
 void sign_in::on_signin_btn_3_clicked()
@@ -93,11 +126,39 @@ void sign_in::on_signin_btn_3_clicked()
     reg->setAttribute(Qt::WA_DeleteOnClose);
     reg->show();
 
-}
-//void sign_in::HomeClosed()
-//{
-//    Homepage *h;
-//    h = new Homepage(this);
+}// registration prompt close
 
-//    h->close();
-//}
+
+
+int sign_in::UserId() const
+{
+    return m_UserId;
+}
+
+void sign_in::setUserId(int newUserId)
+{
+
+    if (m_UserId == newUserId)
+    m_UserId = newUserId;
+//    emit UserIdChanged();
+}
+
+//username setter
+
+const QString &sign_in::Username() const
+{
+    return m_Username;
+}
+
+void sign_in::setUsername(const QString &newUsername)
+{
+    if (m_Username == newUsername)
+
+    m_Username = newUsername;
+    emit UsernameChanged();
+}
+
+
+
+
+

@@ -3,14 +3,15 @@
 #include <QMenu>
 #include<QMenuBar>
 #include<QDesktopServices>
-
-
+#include "about_us.h"
+#include "categories.h"
 Homepage::Homepage(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Homepage)
 {
     ui->setupUi(this);
      this->setFixedSize(this->geometry().width(),this->geometry().height());
+
     ui->pushButton_5->setText("Menu");
     ui->pushButton_5->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/menu.png"));
     QAction *a1 = new QAction;
@@ -106,5 +107,53 @@ void Homepage::on_pushButton_12_clicked()
 void Homepage::on_pushButton_11_clicked()
 {
     QDesktopServices::openUrl(QUrl("https://twitter.com/RentUs44528430"));
+}
+
+
+void Homepage::on_pushButton_4_clicked()
+{
+    this->close();
+    auto aboutus = new about_us();
+    aboutus->setAttribute(Qt::WA_DeleteOnClose);
+    aboutus->show();
+//
+
+}
+
+
+
+void Homepage::on_pushButton_13_clicked()
+{
+
+    auto *cat = new Categories();
+    cat->setAttribute(Qt::WA_DeleteOnClose);
+    cat->show();
+}
+
+
+void Homepage::on_pushButton_14_clicked()
+{
+
+    auto *cat = new Categories();
+    cat->setAttribute(Qt::WA_DeleteOnClose);
+    cat->show();
+}
+
+
+void Homepage::on_pushButton_16_clicked()
+{
+
+    auto *cat = new Categories();
+    cat->setAttribute(Qt::WA_DeleteOnClose);
+    cat->show();
+}
+
+
+void Homepage::on_pushButton_17_clicked()
+{
+
+    auto *cat = new Categories();
+    cat->setAttribute(Qt::WA_DeleteOnClose);
+    cat->show();
 }
 

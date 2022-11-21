@@ -763,101 +763,6 @@ border-bottom:0.6px solid grey;</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_27">
-   <property name="geometry">
-    <rect>
-     <x>1057</x>
-     <y>410</y>
-     <width>131</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{
-	border-image: url(:/image/images/download.jpeg);
-background-color:white;
-border:1px solid black;
-border-radius:10px;
-}
-QLabel:hover{
- border:2px solid green;}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>237</x>
-     <y>410</y>
-     <width>131</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{
-	border-image: url(:/image/images/classic-house-flower-garden-751996.jpg);
-background-color:white;
-border:1px solid black;
-border-radius:10px;
-}
-QLabel:hover{
- border:2px solid green;}background-color:white;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_25">
-   <property name="geometry">
-    <rect>
-     <x>677</x>
-     <y>410</y>
-     <width>131</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{
-	border-image: url(:/image/images/house.jpeg);
-background-color:white;
-border:1px solid black;
-border-radius:10px;
-}
-QLabel:hover{
- border:4px solid green;
-  transform: scale(1.5);
-}
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_26">
-   <property name="geometry">
-    <rect>
-     <x>857</x>
-     <y>410</y>
-     <width>131</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{
-	border-image: url(:/image/images/classic-house-flower-garden-751996.jpg);
-background-color:white;
-border:1px solid black;
-border-radius:10px;
-}
-QLabel:hover{
- border:2px solid green;}background-color:white;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_13">
    <property name="geometry">
     <rect>
@@ -869,55 +774,6 @@ QLabel:hover{
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/image/iconn.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>57</x>
-     <y>410</y>
-     <width>131</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{
-	border-image: url(:/image/images/house.jpeg);
-background-color:white;
-border:1px solid black;
-border-radius:10px;
-}
-QLabel:hover{
- border:4px solid green;
-  transform: scale(1.5);
-}
-</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_15">
-   <property name="geometry">
-    <rect>
-     <x>427</x>
-     <y>410</y>
-     <width>131</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{
-	border-image: url(:/image/images/download.jpeg);
-background-color:white;
-border:1px solid black;
-border-radius:10px;
-}
-QLabel:hover{
- border:2px solid green;}</string>
    </property>
    <property name="text">
     <string/>
@@ -964,6 +820,110 @@ QPushButton:hover{
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_13">
+   <property name="geometry">
+    <rect>
+     <x>157</x>
+     <y>415</y>
+     <width>151</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_13{
+	border-image: url(:/image/images/house.jpeg);
+background-color:white;
+border:1px solid black;
+border-radius:10px;
+}
+#pushButton_13:hover{
+ border:4px solid green;
+  transform: scale(1.5);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_14">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>410</y>
+     <width>151</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_14{
+	border-image: url(:/image/images/house.jpeg);
+background-color:white;
+border:1px solid black;
+border-radius:10px;
+}
+#pushButton_14:hover{
+ border:4px solid green;
+  transform: scale(1.5);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_16">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>410</y>
+     <width>151</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_16{
+	border-image: url(:/image/images/house.jpeg);
+background-color:white;
+border:1px solid black;
+border-radius:10px;
+}
+#pushButton_16:hover{
+ border:4px solid green;
+  transform: scale(1.5);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_17">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>410</y>
+     <width>151</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_17{
+	border-image: url(:/image/images/house.jpeg);
+background-color:white;
+border:1px solid black;
+border-radius:10px;
+}
+#pushButton_17:hover{
+ border:4px solid green;
+  transform: scale(1.5);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>label_2</zorder>
   <zorder>plainTextEdit</zorder>
@@ -992,15 +952,13 @@ QPushButton:hover{
   <zorder>label_7</zorder>
   <zorder>label_8</zorder>
   <zorder>lineEdit</zorder>
-  <zorder>label_27</zorder>
-  <zorder>label_12</zorder>
-  <zorder>label_25</zorder>
-  <zorder>label_26</zorder>
   <zorder>label_13</zorder>
-  <zorder>label_14</zorder>
-  <zorder>label_15</zorder>
   <zorder>line</zorder>
   <zorder>pushButton_12</zorder>
+  <zorder>pushButton_13</zorder>
+  <zorder>pushButton_14</zorder>
+  <zorder>pushButton_16</zorder>
+  <zorder>pushButton_17</zorder>
  </widget>
  <resources>
   <include location="src.qrc"/>
