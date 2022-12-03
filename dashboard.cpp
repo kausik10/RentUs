@@ -49,6 +49,49 @@ userpage::userpage(QWidget *parent) :
     connect(&contributions, SIGNAL(DashBoardClicked()), this, SLOT(Dashboard()));
     connect(&property, SIGNAL(DashBoardClicked()), this, SLOT(Dashboard()));
     connect(&myinfo, SIGNAL(DashBoardClicked()), this, SLOT(Dashboard()));
+
+    extern QString user;
+
+    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE", "mydb123");
+    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
+    QFileInfo checkFile("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
+    QSqlQuery query(database);
+
+    if (checkFile.isFile())
+    {
+
+        if (database.open()){
+            qDebug()<<"Connected to databse";
+
+            query.prepare("SELECT COUNT(username)FROM property_details WHERE username = :username");
+            query.bindValue(":username", user);
+
+            int val = 0;
+
+                 if (!query.exec())
+                 {
+                     QMessageBox::information(this, "Failed", "Data Not found");
+                 }
+                 else{
+                     while(query.next())
+                     {
+                          val = query.value(0).toInt();
+                                  qDebug()<< val;
+
+                ui->count->setText(QString::number(val));
+                ui->count->setAlignment(Qt::AlignCenter);
+
+                     }
+                }
+        }
+
+    }else{
+        qDebug()<<"Database Not found";
+    }
+
+     database.close();
+
+
 }
 
 userpage::~userpage()

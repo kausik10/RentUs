@@ -15,7 +15,7 @@ User_details::User_details(QWidget *parent) :
     {
         QSqlQueryModel *modal =new QSqlQueryModel();
 
-        QSqlQuery * qry=new QSqlQuery();
+        QSqlQuery *qry=new QSqlQuery();
         qry->prepare("select * from user_detailss");
         qry->exec();
         modal->setQuery(*qry);

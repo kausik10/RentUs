@@ -13,6 +13,48 @@ admin_dashboard::admin_dashboard(QWidget *parent) :
     connect(&user_info, SIGNAL(admin_DashBoardClicked()), this, SLOT(admin_DashBoard()));
     connect(&property, SIGNAL(admin_DashBoardClicked()), this, SLOT(admin_DashBoard()));
 
+
+    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE", "mydb");
+    database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
+    QFileInfo checkFile("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
+    QSqlQuery query(database);
+
+    if (checkFile.isFile())
+    {
+
+        if (database.open()){
+            qDebug()<<"Connected to databse";
+
+            query.prepare("SELECT COUNT(username)FROM user_detailss");
+
+
+            int val = 0;
+
+                 if (!query.exec())
+                 {
+                     QMessageBox::information(this, "Failed", "Data Not found");
+                 }
+                 else{
+                     while(query.next())
+                     {
+                          val = query.value(0).toInt();
+                                  qDebug()<< val;
+
+
+//                ui->count_2->setStyleSheet("QTextEdit{text-align: center;background: rgba(123,145,156,13); border-radius:5px; border: none;}");
+                ui->count_2->setText(QString::number(val));
+                ui->count_2->setAlignment(Qt::AlignCenter);
+
+                     }
+                }
+        }
+
+    }else{
+        qDebug()<<"Database Not found";
+    }
+
+     database.close();
+
 }
 
 admin_dashboard::~admin_dashboard()

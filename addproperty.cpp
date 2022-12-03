@@ -3,7 +3,8 @@
 #include <QMenu>
 #include<QMenuBar>
 #include "homepage.h"
-#include "registration_.h"
+#include "qsqlerror.h"
+
 addproperty::addproperty(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::addproperty)
@@ -33,7 +34,7 @@ addproperty::addproperty(QWidget *parent) :
     // button enabling
 
     connect(ui->address, SIGNAL(textChanged()), this, SLOT(checkLineEdits()));
-   // connect(ui->property_type, SIGNAL(textChanged()), this, SLOT(checkLineEdits()));
+
 
     connect(ui->owner_name, SIGNAL(textChanged()), this, SLOT(checkLineEdits()));
     connect(ui->contact_owner, SIGNAL(textChanged()), this, SLOT(checkLineEdits()));
@@ -73,59 +74,70 @@ ui->addproperty_btn->setEnabled(ok);
 
 void addproperty::on_addproperty_btn_clicked()
 {
-    QSqlDatabase database=QSqlDatabase::addDatabase("QSQLITE", "mydb");
+    QSqlDatabase database=QSqlDatabase::addDatabase("QSQLITE", "mydb12");
      database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
 
 
-    QString username,email ;
+    extern QString user,email;
     QString location = ui->address->text();
     QString property_type = ui->property_type->currentText();
     QString owner_name = ui->owner_name->text();
     QString contact_owner = ui->contact_owner->text();
 
-    if(database.open())
+    if (ui->property_type->currentText().isEmpty() || ui->address->text().isEmpty() || ui->contact_owner->text().isEmpty() || ui->owner_name->text().isEmpty())
+    {
+        QMessageBox::warning(this, "Empty", "One or more fields empty");
+
+    }
+    else
+
     {
    //Retrieve Data from Input Fields
+        if(database.open())
+        {
+//QSqlQuery query(QSqlDatabase::database("cycleDb")
+        QSqlQuery qry(QSqlDatabase::database("mydb12"));
 
+        qry.prepare("INSERT INTO property_details(username, email, location, property_type, owner_name, contact_owner) VALUES('"+user+"','"+email+"',  '"+location+"', '"+property_type+"','"+owner_name+"', '"+contact_owner+"')");
 
-        QSqlQuery qry;
-        qry.prepare("SELECT * FROM user_detailss WHERE username=:username AND email =:email") ;
-
-        qry.prepare("INSERT INTO property_details(username, email, location, property_type, owner_name, contact_owner) VALUES('"+username+"','"+email+"',  '"+location+"', '"+property_type+"','"+owner_name+"', '"+contact_owner+"')");
-
-        qry.bindValue(":username",qry.value(1).toString());
-        qry.bindValue(":email", qry.value(2).toString());
+        qry.bindValue(":username",user);
+        qry.bindValue(":email", email);
         qry.bindValue(":location", location);
         qry.bindValue(":property_type", property_type);
         qry.bindValue(":owner_name", owner_name);
-        qry.bindValue(":contacat_owner", contact_owner);
+        qry.bindValue(":contact_owner", contact_owner);
 
 
         if(qry.exec())
         {
 
             QMessageBox::information(this, "Inserted", "Succesfully Added");
+            if(!ui->address->text().isEmpty() && !ui->owner_name->text().isEmpty() && !ui->contact_owner->text().isEmpty())
+            {
+                 ui->address->clear();
+                 ui->owner_name->clear();
+                 ui->contact_owner->clear();
+            }
 
-       } else
-        {
+       } else {
             QMessageBox::information(this, "Not Connected", "Database is Not connected");
+            qDebug() << qry.lastError().text();
+            database.close();
         }
-    }
-    else
-    {
-        qDebug() << "Datavase not connected" ;
-    }
-    database.close();
+        }
+        else
+        {
+            qDebug() << "Datavase not connected" ;
+        }
 
+}
 }
 
 
 void addproperty::on_addproperty_btn_2_clicked()
 {
-//    ui->address->text().isEmpty();
-//    ui->owner_name->text().isEmpty();
-//    ui->contact_owner->text().isEmpty();
-   if(!ui->address->text().isEmpty() && !ui->owner_name->text().isEmpty() && !ui->contact_owner->text().isEmpty())
+
+   if(!ui->address->text().isEmpty() || !ui->owner_name->text().isEmpty() || !ui->contact_owner->text().isEmpty())
    {
         ui->address->clear();
         ui->owner_name->clear();

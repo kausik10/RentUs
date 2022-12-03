@@ -31,8 +31,9 @@ private slots:
     void on_pushButton_23_clicked();
     void on_pushButton_19_clicked();
     void on_pushButton_5_clicked();
-    void on_pushButton_clicked();
-    void on_pushButton_7_clicked();
+
+    void on_pushButton_6_clicked();
+    void on_continue_to_edit_clicked();
 };
 
 #endif // ABOUTME_H

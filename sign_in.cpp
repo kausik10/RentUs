@@ -4,8 +4,12 @@
 #include "registration_.h"
 #include "dashboard.h"
 #include "admin_dashboard.h"
-#include "globals.h"
+
+//#include "globals.h"
 #include <QMessageBox>
+
+QString user;
+QString email;
 
 
 sign_in::sign_in(QWidget *parent) :
@@ -40,7 +44,7 @@ void sign_in::on_login_bt_clicked()
     else
     {
 
-    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
+    QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE", "mydb");
     database.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
 
 
@@ -65,14 +69,16 @@ void sign_in::on_login_bt_clicked()
               //   int idFromDb = query.value(0).toInt();
                  QString usernameFromDB = query.value(1).toString();
                  QString passwordFromDB = query.value(3).toString();
+                 QString emailFromDB = query.value(2).toString();
 
                  if(usernameFromDB == username && passwordFromDB == password)
                  {
 
+                     user = usernameFromDB;
+                     email = emailFromDB;
                      setUsername(usernameFromDB);
 
                      emit UsernameChanged();
-
                      this->close();
 
                      auto page = new userpage();
@@ -90,29 +96,6 @@ void sign_in::on_login_bt_clicked()
      }
     }
 }
-
-//QString sign_in::validation(const QString &username, const QString &password)
-//{
-
-//    QSqlQuery query(QSqlDatabase::database("mydb"));
-//    query.prepare(QString("SELECT * FROM user_detailss"));
-//    if(!query.exec()) {
-//        qDebug() << "failed to execute";
-//    } else {
-//        while (query.next()) {
-//           // int idFromDb = query.value(0).toInt();
-
-//            QString passwordFromDb = query.value(3).toString();
-//            QString usernameFromDb = query.value(1).toString();
-
-
-//            if ((username == usernameFromDb ) && (password == passwordFromDb)) { setUsername(usernameFromDb);}
-
-//        }
-//        return "fail";
-//    }
-//    return "fail";
-//}
 
 
 

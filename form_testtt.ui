@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_testtt</class>
+ <widget class="QWidget" name="Form_testtt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1299</width>
+    <height>657</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>971</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>60</y>
+         <width>447</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_2
+{
+color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton_2:hover
+{
+	background: rgb(220,220,200);
+}</string>
+       </property>
+       <property name="text">
+        <string>Available Properties</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/report.png</normaloff>images/report.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>150</y>
+         <width>447</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_6
+{
+color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton_6:hover
+{
+	background: rgb(220,220,200);
+}</string>
+       </property>
+       <property name="text">
+        <string>  Add a Property</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/home.png</normaloff>images/home.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>230</y>
+         <width>447</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_7
+{
+color: black;
+	background: rgb(255,255,255);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#pushButton_7:hover
+{
+	background: rgb(220,220,200);
+}</string>
+       </property>
+       <property name="text">
+        <string>  About Me</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/user.png</normaloff>images/user.png</iconset>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

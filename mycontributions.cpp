@@ -32,6 +32,23 @@ mycontributions::mycontributions(QWidget *parent) :
 
 
 
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE", "db");
+    db.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
+    if(db.open())
+    {
+        QSqlQueryModel *modal =new QSqlQueryModel();
+
+        QSqlQuery * qry=new QSqlQuery();
+        qry->prepare("select * from property_details");
+        qry->exec();
+        modal->setQuery(*qry);
+        ui->tableView->setModel(modal);
+//        qDebug()<<(modal->rowCount());
+
+
+    }
+    db.close();
+
 
 }
 

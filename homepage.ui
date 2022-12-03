@@ -3,7 +3,7 @@
  <class>Homepage</class>
  <widget class="QWidget" name="Homepage">
   <property name="windowModality">
-   <enum>Qt::NonModal</enum>
+   <enum>Qt::WindowModal</enum>
   </property>
   <property name="enabled">
    <bool>true</bool>
@@ -15,6 +15,24 @@
     <width>1308</width>
     <height>883</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>100</horstretch>
+    <verstretch>100</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1308</width>
+    <height>883</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Homepage</string>
@@ -28,7 +46,7 @@
    <number>-3</number>
   </property>
   <property name="autoFillBackground">
-   <bool>false</bool>
+   <bool>true</bool>
   </property>
   <property name="styleSheet">
    <string notr="true">#Homepage
@@ -52,6 +70,24 @@ QTextEdit, QPlainTextEdit
      <width>101</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -85,6 +121,24 @@ QTextEdit, QPlainTextEdit
      <height>31</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="font">
     <font>
      <pointsize>12</pointsize>
@@ -117,6 +171,24 @@ QTextEdit, QPlainTextEdit
      <height>61</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="font">
     <font>
      <kerning>false</kerning>
@@ -148,6 +220,24 @@ hr { height: 1px; border-width: 0; }
      <width>81</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -188,6 +278,24 @@ hr { height: 1px; border-width: 0; }
      <height>61</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">#plaintextEdit
 {
@@ -203,6 +311,24 @@ hr { height: 1px; border-width: 0; }
      <width>171</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -248,6 +374,24 @@ hr { height: 1px; border-width: 0; }
      <height>31</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="font">
     <font>
      <pointsize>12</pointsize>
@@ -279,6 +423,24 @@ hr { height: 1px; border-width: 0; }
      <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -312,6 +474,24 @@ color: black;
      <height>71</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="font">
     <font>
      <pointsize>11</pointsize>
@@ -343,6 +523,24 @@ color: black;
      <width>121</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -380,6 +578,24 @@ color: black;
      <height>71</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:white;
 font:40px;
@@ -399,6 +615,24 @@ font:bold;</string>
      <width>93</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -438,6 +672,24 @@ QPushButton:hover{
      <height>461</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">
 #label_2{
@@ -457,6 +709,24 @@ background-color:rgba(100,100,100,160);
      <height>20</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:white;
 font: 13pt bold &quot;Centaur&quot;;</string>
@@ -473,6 +743,24 @@ font: 13pt bold &quot;Centaur&quot;;</string>
      <width>271</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;
@@ -491,6 +779,24 @@ font: 14pt bold &quot;Centaur&quot;;</string>
      <height>20</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:white;
 font: 14pt bold &quot;Centaur&quot;;</string>
@@ -507,6 +813,24 @@ font: 14pt bold &quot;Centaur&quot;;</string>
      <width>91</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="font">
     <font>
@@ -530,6 +854,24 @@ font: 14pt bold &quot;Centaur&quot;;</string>
      <width>151</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">
@@ -565,6 +907,24 @@ QPushButton:hover{
      <height>41</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">   QPushButton{ height: 30px;
     width: 30px;
@@ -593,6 +953,24 @@ QPushButton:hover{
      <height>41</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:black;
 font:25px;</string>
@@ -609,6 +987,24 @@ font:25px;</string>
      <width>41</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true"> QPushButton{   height: 30px;
@@ -638,6 +1034,24 @@ QPushButton:hover{
      <height>20</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:white;
 font: 13pt bold &quot;Centaur&quot;;</string>
@@ -654,6 +1068,24 @@ font: 13pt bold &quot;Centaur&quot;;</string>
      <width>531</width>
      <height>51</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">color: black;
@@ -672,6 +1104,24 @@ font:bold;</string>
      <width>41</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton{
@@ -702,6 +1152,24 @@ QPushButton:hover{
      <height>461</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/image/images/house.jpeg);</string>
    </property>
@@ -710,6 +1178,9 @@ QPushButton:hover{
    </property>
   </widget>
   <widget class="QLabel" name="label_7">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -718,11 +1189,35 @@ QPushButton:hover{
      <height>41</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">background:rgb(255, 255, 255);
 border-left:0.5px solid grey;
 border-top:0.5px solid grey;
 border-bottom:0.6px solid grey;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
    </property>
    <property name="text">
     <string/>
@@ -736,6 +1231,24 @@ border-bottom:0.6px solid grey;</string>
      <width>31</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/image/images/iconn.png);</string>
@@ -752,6 +1265,24 @@ border-bottom:0.6px solid grey;</string>
      <width>441</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="placeholderText">
     <string>Place Name</string>
@@ -772,6 +1303,24 @@ border-bottom:0.6px solid grey;</string>
      <height>21</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/image/iconn.png);</string>
    </property>
@@ -788,6 +1337,24 @@ border-bottom:0.6px solid grey;</string>
      <height>101</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
@@ -800,6 +1367,24 @@ border-bottom:0.6px solid grey;</string>
      <width>41</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true"> QPushButton{   height: 30px;
@@ -829,6 +1414,24 @@ QPushButton:hover{
      <height>91</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">#pushButton_13{
 	border-image: url(:/image/images/house.jpeg);
@@ -854,6 +1457,24 @@ border-radius:10px;
      <width>151</width>
      <height>91</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">#pushButton_14{
@@ -881,6 +1502,24 @@ border-radius:10px;
      <height>91</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">#pushButton_16{
 	border-image: url(:/image/images/house.jpeg);
@@ -907,6 +1546,24 @@ border-radius:10px;
      <height>91</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>100</horstretch>
+     <verstretch>100</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">#pushButton_17{
 	border-image: url(:/image/images/house.jpeg);
@@ -926,6 +1583,7 @@ border-radius:10px;
   </widget>
   <zorder>label</zorder>
   <zorder>label_2</zorder>
+  <zorder>lineEdit</zorder>
   <zorder>plainTextEdit</zorder>
   <zorder>pushButton</zorder>
   <zorder>pushButton_2</zorder>
@@ -936,7 +1594,6 @@ border-radius:10px;
   <zorder>pushButton_4</zorder>
   <zorder>pushButton_5</zorder>
   <zorder>pushButton_7</zorder>
-  <zorder>label_5</zorder>
   <zorder>pushButton_6</zorder>
   <zorder>label_9</zorder>
   <zorder>label_24</zorder>
@@ -949,9 +1606,7 @@ border-radius:10px;
   <zorder>label_23</zorder>
   <zorder>label_28</zorder>
   <zorder>pushButton_11</zorder>
-  <zorder>label_7</zorder>
   <zorder>label_8</zorder>
-  <zorder>lineEdit</zorder>
   <zorder>label_13</zorder>
   <zorder>line</zorder>
   <zorder>pushButton_12</zorder>
@@ -959,6 +1614,8 @@ border-radius:10px;
   <zorder>pushButton_14</zorder>
   <zorder>pushButton_16</zorder>
   <zorder>pushButton_17</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_7</zorder>
  </widget>
  <resources>
   <include location="src.qrc"/>

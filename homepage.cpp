@@ -10,7 +10,9 @@ Homepage::Homepage(QWidget *parent) :
     ui(new Ui::Homepage)
 {
     ui->setupUi(this);
-     this->setFixedSize(this->geometry().width(),this->geometry().height());
+//    Homepage->showMaximized();
+//    ui->setsize()
+//     this->setFixedSize(this->geometry().width(),this->geometry().height());
 
     ui->pushButton_5->setText("Menu");
     ui->pushButton_5->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/menu.png"));
@@ -100,7 +102,7 @@ void Homepage::on_pushButton_9_clicked()
 
 void Homepage::on_pushButton_12_clicked()
 {
-    QDesktopServices::openUrl(QUrl("mailto:Rent@rent.us1001@gmail.com"));
+    QDesktopServices::openUrl(QUrl("mailto:rent.us1001@gmail.com"));
 }
 
 

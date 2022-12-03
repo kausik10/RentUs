@@ -7,21 +7,24 @@ properrty_details::properrty_details(QWidget *parent) :
     ui(new Ui::properrty_details)
 {
     ui->setupUi(this);
-  //  ui->stackedWidget->setCurrentIndex(2);
 
-    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
+
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE", "db");
     db.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
     if(db.open())
     {
         QSqlQueryModel *modal =new QSqlQueryModel();
 
         QSqlQuery * qry=new QSqlQuery();
-        qry->prepare("select * from user_detailss, property_details");//WHERE username = :username AND email = :email");
+        qry->prepare("select * from property_details");
         qry->exec();
         modal->setQuery(*qry);
         ui->tableView->setModel(modal);
-        qDebug()<<(modal->rowCount());
+//        qDebug()<<(modal->rowCount());
+
+
     }
+    db.close();
 }
 
 properrty_details::~properrty_details()
