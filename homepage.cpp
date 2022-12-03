@@ -26,6 +26,8 @@ Homepage::Homepage(QWidget *parent) :
     a2->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/hhome.png"));
     a3->setText("Feedback");
     a3->setIcon(QIcon("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/images/feedback.jpg"));
+    a3->hovered();
+
 
     QMenu *menu = new QMenu;
     menu->addAction(a1);
@@ -33,6 +35,7 @@ Homepage::Homepage(QWidget *parent) :
     menu->addAction(a3);
 
     ui->pushButton_5->setMenu(menu);
+
   //  ui->pushButton_5->setStyleSheet("::menu-indicator{ image: none; }");
    // QApplication::instance()->setAttribute(Qt::AA_DontShowIconsInMenus, true);
 

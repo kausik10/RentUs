@@ -247,11 +247,9 @@ void aboutme::on_pushButton_6_clicked()
         }
         else{
 
-            QMessageBox::information(this, "Update", "Data updated successfully");
-//            qDebug() << query.lastError().text();
-//            this->close();
-//            userpage up;
-//            up.close();
+            QMessageBox::information(this, "Update", "Data updated successfully. Login again to see changes.");
+            qDebug() << query.lastError().text();
+            ui->stackedWidget->setCurrentIndex(1);
 
             QSqlDatabase::removeDatabase("QSQLITE");
 //            auto *home = new Homepage();
@@ -276,6 +274,7 @@ void aboutme::on_continue_to_edit_clicked()
     QFileInfo checkFile("C:/Users/ASUS/OneDrive/Desktop/QT/RentUS/Database/mydb.sqlite");
     QSqlQuery query(database);
     QString password_ = ui->check_password->text();
+     ui->check_password->setAlignment(Qt::AlignCenter);
     extern QString user;
 
       if (checkFile.isFile())
@@ -332,5 +331,17 @@ void aboutme::on_continue_to_edit_clicked()
 
        database.close();
 
+}
+
+
+void aboutme::on_pushButton_12_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void aboutme::on_continue_to_edit_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
 }
 

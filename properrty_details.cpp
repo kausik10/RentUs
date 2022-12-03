@@ -15,12 +15,26 @@ properrty_details::properrty_details(QWidget *parent) :
     {
         QSqlQueryModel *modal =new QSqlQueryModel();
 
-        QSqlQuery * qry=new QSqlQuery();
-        qry->prepare("select * from property_details");
+        QSqlQuery *qry=new QSqlQuery(db);
+        qry->prepare("select username, email, location, property_type, owner_name, contact_owner from property_details ORDER BY owner_name");
         qry->exec();
         modal->setQuery(*qry);
+        modal->setHeaderData(0, Qt::Horizontal, tr("ADDED BY"));
+        modal->setHeaderData(1, Qt::Horizontal, tr("USER EMAIL"));
+        modal->setHeaderData(2, Qt::Horizontal, tr("PROPERTY TYPE"));
+        modal->setHeaderData(3, Qt::Horizontal, tr("OWNER OF PROPERTY"));
+        modal->setHeaderData(4, Qt::Horizontal, tr("CONTACT OF OWNER"));
+//        modal->setHeaderData(5, Qt::Horizontal, tr("ADDRESS"));
+
         ui->tableView->setModel(modal);
-//        qDebug()<<(modal->rowCount());
+        ui->tableView->resizeColumnsToContents();
+        ui->tableView->setModel(modal);
+        ui->tableView->resizeColumnsToContents();
+        for (int c = 0; c < ui->tableView->horizontalHeader()->count(); ++c)
+        {
+            ui->tableView->horizontalHeader()->setSectionResizeMode(c, QHeaderView::Stretch);
+        }
+
 
 
     }

@@ -24,6 +24,10 @@ private slots:
 
     void admin_DashBoard();
 
+    void on_pushButton_19_clicked();
+
+    void on_pushButton_20_clicked();
+
 private:
     Ui::admin_dashboard *ui;
     User_details user_info;

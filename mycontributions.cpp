@@ -38,12 +38,23 @@ mycontributions::mycontributions(QWidget *parent) :
     {
         QSqlQueryModel *modal =new QSqlQueryModel();
 
-        QSqlQuery * qry=new QSqlQuery();
-        qry->prepare("select * from property_details");
+        QSqlQuery *qry=new QSqlQuery(db);
+        qry->prepare("select owner_name, contact_owner, location, property_type  from property_details ORDER BY owner_name");
         qry->exec();
         modal->setQuery(*qry);
+        modal->setHeaderData(0, Qt::Horizontal, tr("OWNER OF PROPERTY"));
+        modal->setHeaderData(1, Qt::Horizontal, tr("CONTACT OF OWNER"));
+        modal->setHeaderData(2, Qt::Horizontal, tr("ADDRESS"));
+        modal->setHeaderData(3, Qt::Horizontal, tr("PROPERTY TYPE"));
+
+//        modal->setHeaderData(5, Qt::Horizontal, tr("ADDRESS"));
+
         ui->tableView->setModel(modal);
-//        qDebug()<<(modal->rowCount());
+        ui->tableView->resizeColumnsToContents();
+        for (int c = 0; c < ui->tableView->horizontalHeader()->count(); ++c)
+        {
+            ui->tableView->horizontalHeader()->setSectionResizeMode(c, QHeaderView::Stretch);
+        }
 
 
     }
